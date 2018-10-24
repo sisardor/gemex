@@ -148,6 +148,8 @@
     "chalk": "^2.4.1",
     "compression": "1.7.2",
     "cross-env": "5.2.0",
+    "element-react": "^1.4.21",
+    "element-theme-default": "^1.4.13",
     "express": "4.16.3",
     "fontfaceobserver": "2.0.13",
     "history": "4.7.2",
