@@ -1,5 +1,4 @@
-/**
- *
+/*
  * App.js
  *
  * This component is the skeleton around the actual pages, and should only
@@ -13,17 +12,24 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
+// import { Alignment, Button, Navbar } from '@blueprintjs/core';
+import '@blueprintjs/core/lib/css/blueprint.css';
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
 
 export default function App() {
   return (
     <div>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+        <Footer />
+      </div>
     </div>
   );
 }

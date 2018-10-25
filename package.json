@@ -144,6 +144,8 @@
     ]
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.7.0",
+    "antd": "^3.10.2",
     "babel-polyfill": "6.26.0",
     "chalk": "^2.4.1",
     "compression": "1.7.2",
