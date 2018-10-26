@@ -15,9 +15,11 @@ import { Switch, Route } from 'react-router-dom';
 // import { Alignment, Button, Navbar } from '@blueprintjs/core';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import HomePage from 'containers/HomePage/Loadable';
+import LoginPage from 'containers/LoginPage/Loadable';
+import RegisterPage from 'containers/RegisterPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
-import Footer from 'components/Footer';
+// import Footer from 'components/Footer';
 
 export default function App() {
   return (
@@ -26,9 +28,11 @@ export default function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/register" component={RegisterPage} />
           <Route component={NotFoundPage} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
