@@ -11,7 +11,7 @@ import messages from './messages';
 function Footer() {
   return (
     <Wrapper className="footer">
-      <FormattedMessage {...messages.header} />
+      <strong>Footer:</strong> <FormattedMessage {...messages.header} />
     </Wrapper>
   );
 }

@@ -11,6 +11,11 @@ import Wrapper from './Wrapper';
 
 /* eslint-disable react/prefer-stateless-function */
 class Header extends React.Component {
+  // renderX() {
+  //   return <Wrapper className="header">
+  //     <strong>Header:</strong> Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero.
+  //   </Wrapper>
+  // }
   render() {
     return (
       <Wrapper className="header">
