@@ -13,27 +13,38 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 // import { Alignment, Button, Navbar } from '@blueprintjs/core';
-import '@blueprintjs/core/lib/css/blueprint.css';
 import HomePage from 'containers/HomePage/Loadable';
 import LoginPage from 'containers/LoginPage/Loadable';
 import RegisterPage from 'containers/RegisterPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
-// import Footer from 'components/Footer';
+import Footer from 'components/Footer';
+import '@blueprintjs/core/lib/css/blueprint.css';
+import './main.css';
 
 export default function App() {
   return (
-    <div>
-      <div>
+    <div className="height100">
+      <div className="wrapper">
         <Header />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/login" component={LoginPage} />
-          <Route exact path="/register" component={RegisterPage} />
-          <Route component={NotFoundPage} />
-        </Switch>
-        {/* <Footer /> */}
+        <div className="middle">
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/login" component={LoginPage} />
+            <Route exact path="/register" component={RegisterPage} />
+            <Route component={NotFoundPage} />
+          </Switch>
+          <aside className="left-sidebar">
+            <strong>Left Sidebar:</strong> Integer velit. Vestibulum nisi nunc,
+            accumsan ut, vehicula sit amet, porta a, mi. Nam nisl tellus,
+            placerat eget, posuere eget, egestas eget, dui. Pellentesque
+            habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. In elementum urna a eros. Integer iaculis. Maecenas
+            vel elit.
+          </aside>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

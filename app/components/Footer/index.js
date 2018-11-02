@@ -10,10 +10,8 @@ import messages from './messages';
 
 function Footer() {
   return (
-    <Wrapper>
-      <section>
-        <FormattedMessage {...messages.header} />
-      </section>
+    <Wrapper className="footer">
+      <FormattedMessage {...messages.header} />
     </Wrapper>
   );
 }

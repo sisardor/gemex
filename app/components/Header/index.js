@@ -13,12 +13,14 @@ import Wrapper from './Wrapper';
 class Header extends React.Component {
   render() {
     return (
-      <Wrapper>
+      <Wrapper className="header">
         <Navbar className="bp3-darkX">
           <Navbar.Group align={Alignment.LEFT}>
             <Navbar.Heading>Gemex</Navbar.Heading>
             <Navbar.Divider />
-            <Button className="bp3-minimal" icon="home" text="Home" />
+            <Link to="/">
+              <Button className="bp3-minimal" icon="home" text="Home" />
+            </Link>
           </Navbar.Group>
           <Navbar.Group align={Alignment.RIGHT}>
             <Link to="/register">
