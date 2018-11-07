@@ -19,7 +19,7 @@ import makeSelectAdminPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
-import Wrapper, { BoxRoot, FlexBoxRoot, A,  } from './Wrapper';
+import Wrapper, { BoxRoot, FlexBoxRoot, A } from './Wrapper';
 // import 'style.scss'
 const navigations = [
   {
@@ -30,19 +30,19 @@ const navigations = [
       {
         name: 'Disputes',
         route: '/disputes',
-        icon: null
+        icon: null,
       },
       {
         name: 'Settings',
         route: '/settings',
-        icon: null
+        icon: null,
       },
       {
         name: 'Apple Pay',
         route: '/applepay',
-        icon: null
-      }
-    ]
+        icon: null,
+      },
+    ],
   },
   {
     name: 'Balance',
@@ -52,21 +52,21 @@ const navigations = [
       {
         name: 'Payouts',
         route: '/payouts',
-        icon: null
+        icon: null,
       },
       {
         name: 'Transactions',
         route: '/transactions',
-        icon: null
+        icon: null,
       },
       {
         name: 'Settings',
         route: '/settings',
-        icon: null
-      }
-    ]
-  }
-]
+        icon: null,
+      },
+    ],
+  },
+];
 /* eslint-disable react/prefer-stateless-function */
 export class AdminPage extends React.Component {
   render() {
@@ -86,11 +86,11 @@ export class AdminPage extends React.Component {
 
 class NavGroup extends React.Component {
   render() {
-    var lis = this.props.navigations.map((nav,i) => {
-      return (
-        <li key={i}><NavItem {...nav} /></li>
-      );
-    })
+    const lis = this.props.navigations.map((nav, i) => (
+      <li key={i}>
+        <NavItem {...nav} />
+      </li>
+    ));
     return (
       <BoxRoot>
         <ul>{lis}</ul>

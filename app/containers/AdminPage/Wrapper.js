@@ -18,16 +18,16 @@ const FlexBoxRoot = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   display: flex;
-`
+`;
 const BoxRoot = styled.div`
   margin-top: 16px;
-`
+`;
 
 const A = styled.a`
   color: #586ada;
   text-decoration: none;
   font-weight: 500;
-`
+`;
 
 const NavItem = styled.div`
   padding-left: 4px;
@@ -35,7 +35,7 @@ const NavItem = styled.div`
   padding-bottom: 4px;
   padding-top: 4px;
   background-color: #e3e8ee;
-`
+`;
 
-export { BoxRoot, FlexBoxRoot, A, NavItem }
+export { BoxRoot, FlexBoxRoot, A, NavItem };
 export default Wrapper;

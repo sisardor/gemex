@@ -27,7 +27,7 @@ import './layout.css';
 export default function App() {
   return (
     <div className="wrapper">
-      {/*<Header />
+      {/* <Header />
       <aside className="left-sidebar">
         <strong>Left Sidebar:</strong> Integer velit.
         <ul>
@@ -35,7 +35,7 @@ export default function App() {
           <li>Item</li>
           <li>Item</li>
         </ul>
-      </aside>*/}
+      </aside> */}
       <div className="main">
         <Switch>
           <Route exact path="/" component={HomePage} />
