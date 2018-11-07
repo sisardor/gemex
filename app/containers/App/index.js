@@ -16,6 +16,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import LoginPage from 'containers/LoginPage/Loadable';
 import RegisterPage from 'containers/RegisterPage/Loadable';
+import AdminPage from 'containers/AdminPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -26,7 +27,7 @@ import './layout.css';
 export default function App() {
   return (
     <div className="wrapper">
-      <Header />
+      {/*<Header />
       <aside className="left-sidebar">
         <strong>Left Sidebar:</strong> Integer velit.
         <ul>
@@ -34,10 +35,11 @@ export default function App() {
           <li>Item</li>
           <li>Item</li>
         </ul>
-      </aside>
+      </aside>*/}
       <div className="main">
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/admin" component={AdminPage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/register" component={RegisterPage} />
           <Route component={NotFoundPage} />
