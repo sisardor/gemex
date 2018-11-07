@@ -6,22 +6,23 @@
 
 import React from 'react';
 // import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 import styled from 'styled-components';
-// import { classnames } from 'classnames';
-// import './style.css'
+import classnames from 'classnames';
+import './style.css'
 
 const Wrapper = styled.div`
   position: relative;
 `;
-const A = styled.a`
-  // color: #586ada;
-  // text-decoration: none;
-  // font-weight: 500;
-  //
-  // :hover {
-  //   color: #2b2d50;
-  // text-decoration: none;
-  // }
+const A = styled(Link)`
+  color: #586ada;
+  text-decoration: none;
+  font-weight: 500;
+
+  :hover {
+    color: #2b2d50;
+    text-decoration: none;
+  }
 `;
 const NavItemX = styled.div`
   padding-left: 4px;
@@ -66,30 +67,33 @@ class NavItem extends React.Component {
   }
 
   mouseOut() {
-    console.log('Mouse out!!!');
+    // console.log('Mouse out!!!');
     this.setState({ isHighlighted: false });
   }
 
   mouseOver() {
-    console.log('Mouse over!!!');
+    // console.log('Mouse over!!!');
     this.setState({ isHighlighted: true });
   }
-
+  onClick() {
+    console.log('cccc', this.props);
+  }
   render() {
     const icon_class = classnames({
-      'foo-bar': true,
+      [this.props.icon]: true,
+      [this.props.icon + '-highlighted']: this.state.isHighlighted
     });
-    console.log(this.props);
+
     return (
       <Wrapper
         onMouseOver={() => this.mouseOver()}
         onMouseOut={() => this.mouseOut()}
       >
-        <A>
+        <A to={`/admin/${this.props.route}`} onClick={() => this.onClick()}>
           <NavItemX>
             <AlignItem>
               <NavIconDiv>
-                <NavIcon className={this.props.icon} />
+                <NavIcon className={icon_class} />
               </NavIconDiv>
               <NavTextSpan>{this.props.name}</NavTextSpan>
             </AlignItem>

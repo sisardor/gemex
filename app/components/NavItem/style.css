@@ -3,6 +3,13 @@
   background-image: url('../../images/balance.svg');
 }
 
+.balance-icon-highlighted {
+  background-image: url('../../images/balance-highlighted.svg');
+}
+
 .payments-icon {
   background-image: url('../../images/payments.svg');
+}
+.payments-icon-highlighted {
+  background-image: url('../../images/payments-highlighted.svg');
 }

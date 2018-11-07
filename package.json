@@ -149,6 +149,7 @@
     "antd": "^3.10.2",
     "babel-polyfill": "6.26.0",
     "chalk": "^2.4.1",
+    "classnames": "^2.2.6",
     "compression": "1.7.2",
     "cross-env": "5.2.0",
     "element-react": "^1.4.21",

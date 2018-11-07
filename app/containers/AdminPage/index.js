@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
@@ -15,6 +16,7 @@ import { compose } from 'redux';
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 import NavItem from 'components/NavItem';
+import MainPane from 'containers/MainPane/Loadable';
 import makeSelectAdminPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -23,45 +25,45 @@ import Wrapper, { BoxRoot, FlexBoxRoot, A } from './Wrapper';
 // import 'style.scss'
 const navigations = [
   {
-    name: 'Payments',
-    route: '/payments',
+    name: 'Products',
+    route: 'products',
     icon: 'payments-icon',
     children: [
       {
         name: 'Disputes',
-        route: '/disputes',
+        route: 'disputes',
         icon: null,
       },
       {
         name: 'Settings',
-        route: '/settings',
+        route: 'settings',
         icon: null,
       },
       {
         name: 'Apple Pay',
-        route: '/applepay',
+        route: 'applepay',
         icon: null,
       },
     ],
   },
   {
     name: 'Balance',
-    route: '/balance',
+    route: 'balance',
     icon: 'balance-icon',
     children: [
       {
         name: 'Payouts',
-        route: '/payouts',
+        route: 'payouts',
         icon: null,
       },
       {
         name: 'Transactions',
-        route: '/transactions',
+        route: 'transactions',
         icon: null,
       },
       {
         name: 'Settings',
-        route: '/settings',
+        route: 'settings',
         icon: null,
       },
     ],
@@ -71,15 +73,20 @@ const navigations = [
 export class AdminPage extends React.Component {
   render() {
     return (
-      <Wrapper>
+      <div>
         <Helmet>
           <title>AdminPage</title>
           <meta name="description" content="Description of AdminPage" />
         </Helmet>
-        <FlexBoxRoot>
-          <NavGroup navigations={navigations} />
-        </FlexBoxRoot>
-      </Wrapper>
+        <Wrapper>
+          <FlexBoxRoot>
+            <NavGroup navigations={navigations} />
+          </FlexBoxRoot>
+        </Wrapper>
+        <Route path="/admin/products" component={MainPane} />
+        <Route path="/admin/payments" component={MainPane} />
+
+      </div>
     );
   }
 }
