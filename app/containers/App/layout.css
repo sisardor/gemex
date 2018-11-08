@@ -31,13 +31,22 @@
   /* background: deepskyblue; */
 }
 .footer {
-  background: lightgreen;
+  /* background: lightgreen; */
 }
 
 
 .main {
   min-height: calc(100vh - 100px);
 	padding: 0.5em;
+}
+html { height: 100%; }
+
+body {
+    min-height:100%;
+    position:relative;
+    padding-bottom:100px;
+		overflow: hidden;
+    background: #e3e8ee;
 }
 .footer {
   height: 50px;

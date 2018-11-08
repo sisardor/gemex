@@ -16,6 +16,8 @@ import TopNavigator from 'components/TopNavigator/Loadable';
 import HomePage from 'containers/HomePage/Loadable';
 import LoginPage from 'containers/LoginPage/Loadable';
 import RegisterPage from 'containers/RegisterPage/Loadable';
+import AdminPage from 'containers/AdminPage/Loadable';
+import MainPane from 'containers/MainPane/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -33,6 +35,7 @@ export default function App() {
       <div className="main">
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/admin" component={AdminPage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/register" component={RegisterPage} />
           <Route component={NotFoundPage} />
