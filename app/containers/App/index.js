@@ -19,7 +19,7 @@ import RegisterPage from 'containers/RegisterPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import Aside from 'components/Aside'
+import Aside from 'components/Aside';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import './stylereset.css';
 import './layout.css';
