@@ -20,14 +20,10 @@ export default class HomePage extends React.PureComponent {
   onRemove = () => {};
   render() {
     const list = [];
-    for (let i = 0; i < 100; i += 1) {
+    for (let i = 0; i < 10; i += 1) {
       list.push(
-        <Card interactive elevation={Elevation.TWO}>
-          <h5>
-            <a href="/">Card heading</a>
-          </h5>
-          <p>Card content</p>
-          <Button>Submit</Button>
+        <Card key={i} interactive elevation={Elevation.TWO}>
+          Hello
         </Card>,
       );
     }
