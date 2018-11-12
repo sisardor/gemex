@@ -25,6 +25,15 @@ module.exports = options => ({
   optimization: options.optimization,
   module: {
     rules: [
+      // {
+      //     test: /\.scss$/,
+      //     use: [
+      //         "style-loader", // creates style nodes from JS strings
+      //         "css-loader", // translates CSS into CommonJS
+      //         "sass-loader" // compiles Sass to CSS, using Node Sass by default
+      //     ]
+      // },
+
       {
         test: /\.js$/, // Transform all .js files required somewhere with Babel
         exclude: /node_modules/,
@@ -58,7 +67,8 @@ module.exports = options => ({
             loader: 'svg-url-loader',
             options: {
               // Inline files smaller than 10 kB
-              limit: 10 * 1024,
+              limit: 100 * 1024,
+              encoding: 'base64',
               noquotes: true,
             },
           },

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.header`
-  display: flex;
+const Wrapper = styled.div`
+  margin-top: 16px;
 `;
 
 export default Wrapper;

@@ -13,7 +13,7 @@ import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 // import LoginForm from 'components/LoginForm/Loadable';
-import { Button, Card, Tag, Elevation } from '@blueprintjs/core';
+import { Card, Tag, Elevation } from '@blueprintjs/core';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {

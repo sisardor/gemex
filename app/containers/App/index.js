@@ -12,16 +12,16 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import TopNavigator from 'components/TopNavigator/Loadable';
+// import TopNavigator from 'components/TopNavigator/Loadable';
 import HomePage from 'containers/HomePage/Loadable';
 import LoginPage from 'containers/LoginPage/Loadable';
 import RegisterPage from 'containers/RegisterPage/Loadable';
 import AdminPage from 'containers/AdminPage/Loadable';
-import MainPane from 'containers/MainPane/Loadable';
+// import MainPane from 'containers/MainPane/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from 'components/Header';
+// import Header from 'components/Header';
 import Footer from 'components/Footer';
-import Aside from 'components/Aside';
+// import Aside from 'components/Aside';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import './stylereset.css';
 import './layout.css';
@@ -29,9 +29,9 @@ import './layout.css';
 export default function App() {
   return (
     <div className="wrapper">
-      <Header />
+      {/* <Header />
       <TopNavigator />
-      <Aside />
+      <Aside /> */}
       <div className="main">
         <Switch>
           <Route exact path="/" component={HomePage} />

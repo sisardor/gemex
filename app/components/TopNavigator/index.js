@@ -15,8 +15,6 @@ import {
   Intent,
   PopoverInteractionKind,
 } from '@blueprintjs/core';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
 
 /* eslint-disable react/prefer-stateless-function */
 class TopNavigator extends React.Component {

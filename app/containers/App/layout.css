@@ -120,3 +120,24 @@ body {
 .nav-item {
 	padding: 15px;
 }
+
+
+
+
+.db-SideNav-item-enter {
+    opacity: 0
+}
+
+.db-SideNav-item-enter.db-SideNav-item-enter-active {
+    opacity: 1;
+    transition: opacity .05s linear
+}
+
+.db-SideNav-item-leave {
+    opacity: 1
+}
+
+.db-SideNav-item-leave.db-SideNav-item-leave-active {
+    opacity: 0;
+    transition: opacity .05s linear
+}

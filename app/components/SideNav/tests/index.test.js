@@ -1,9 +1,9 @@
 // import React from 'react';
 // import { shallow } from 'enzyme';
 
-// import NavItem from '../index';
+// import { SideNav } from '../index';
 
-describe('<NavItem />', () => {
+describe('<SideNav />', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });
