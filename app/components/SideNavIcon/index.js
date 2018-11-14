@@ -38,6 +38,14 @@ import chatboxes from 'images/chatboxes.svg';
 import chatboxesH from 'images/chatboxes-highlighted.svg';
 import chatboxesS from 'images/chatboxes-selected.svg';
 
+import people from 'images/people.svg';
+import peopleH from 'images/people-highlighted.svg';
+import peopleS from 'images/people-selected.svg';
+
+import comment from 'images/comment.svg';
+import commentH from 'images/comment-highlighted.svg';
+import commentS from 'images/comment-selected.svg';
+
 const icons = {
   home,
   'home-highlighted': homeH,
@@ -63,6 +71,12 @@ const icons = {
   chatboxes,
   'chatboxes-highlighted': chatboxesH,
   'chatboxes-selected': chatboxesS,
+  people,
+  'people-highlighted': peopleH,
+  'people-selected': peopleS,
+  comment,
+  'comment-highlighted': commentH,
+  'comment-selected': commentS,
 };
 
 const SideNavIcon = styled.span`

@@ -14,19 +14,25 @@ import React from 'react';
 // import messages from './messages';
 // import LoginForm from 'components/LoginForm/Loadable';
 import { Card, Tag, Elevation } from '@blueprintjs/core';
+import products from './products.json'
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   onRemove = () => {};
   render() {
-    const list = [];
-    for (let i = 0; i < 10; i += 1) {
-      list.push(
-        <Card key={i} interactive elevation={Elevation.TWO}>
-          Hello
-        </Card>,
+    // const list = [];
+    const list = products.map((product, index) => {
+      return (
+        <div><img src={product.thumb} /></div>
       );
-    }
+    })
+    // for (let i = 0; i < 10; i += 1) {
+    //   list.push(
+    //     <Card key={i} interactive elevation={Elevation.TWO}>
+    //       Hello
+    //     </Card>,
+    //   );
+    // }
     return (
       <div className="container">
         <main className="content">

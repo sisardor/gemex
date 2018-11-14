@@ -85,7 +85,7 @@ const sidenavMenu = [
     id: 'sidenav.customers',
     path: '/admin/customer',
     label: 'Customers',
-    icon: 'customers',
+    icon: 'people',
     indent: false,
     disable: false,
     group: 1,
