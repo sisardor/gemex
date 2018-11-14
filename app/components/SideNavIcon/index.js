@@ -13,9 +13,30 @@ import homeH from 'images/home-highlighted.svg';
 import homeS from 'images/home-selected.svg';
 import balanceH from 'images/balance-highlighted.svg';
 import balanceS from 'images/balance-selected.svg';
+
 import payments from 'images/payments.svg';
 import paymentsH from 'images/payments-highlighted.svg';
 import paymentsS from 'images/payments-selected.svg';
+
+import orders from 'images/orders.svg';
+import ordersH from 'images/orders-highlighted.svg';
+import ordersS from 'images/orders-selected.svg';
+
+import customers from 'images/customers.svg';
+import customersH from 'images/customers-highlighted.svg';
+import customersS from 'images/customers-selected.svg';
+
+import tags from 'images/tags.svg';
+import tagsH from 'images/tags-highlighted.svg';
+import tagsS from 'images/tags-selected.svg';
+
+import apps from 'images/apps.svg';
+import appsH from 'images/apps-highlighted.svg';
+import appsS from 'images/apps-selected.svg';
+
+import chatboxes from 'images/chatboxes.svg';
+import chatboxesH from 'images/chatboxes-highlighted.svg';
+import chatboxesS from 'images/chatboxes-selected.svg';
 
 const icons = {
   home,
@@ -27,6 +48,21 @@ const icons = {
   payments,
   'payments-highlighted': paymentsH,
   'payments-selected': paymentsS,
+  orders,
+  'orders-highlighted': ordersH,
+  'orders-selected': ordersS,
+  customers,
+  'customers-highlighted': customersH,
+  'customers-selected': customersS,
+  tags,
+  'tags-highlighted': tagsH,
+  'tags-selected': tagsS,
+  apps,
+  'apps-highlighted': appsH,
+  'apps-selected': appsS,
+  chatboxes,
+  'chatboxes-highlighted': chatboxesH,
+  'chatboxes-selected': chatboxesS,
 };
 
 const SideNavIcon = styled.span`

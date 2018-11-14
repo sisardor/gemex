@@ -67,7 +67,7 @@ module.exports = options => ({
             loader: 'svg-url-loader',
             options: {
               // Inline files smaller than 10 kB
-              limit: 100 * 1024,
+              limit: 500 * 1024,
               encoding: 'base64',
               noquotes: true,
             },

@@ -130,7 +130,7 @@ body {
 
 .db-SideNav-item-enter.db-SideNav-item-enter-active {
     opacity: 1;
-    transition: opacity .05s linear
+    transition: opacity .1s linear
 }
 
 .db-SideNav-item-leave {
@@ -139,5 +139,10 @@ body {
 
 .db-SideNav-item-leave.db-SideNav-item-leave-active {
     opacity: 0;
-    transition: opacity .05s linear
+    transition: opacity .1s linear
+}
+
+
+.special-u::after {
+	content: " - Remember this";
 }

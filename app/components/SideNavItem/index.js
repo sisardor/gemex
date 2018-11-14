@@ -53,7 +53,7 @@ export class SideNavItem extends React.Component {
 
     let style = null;
     let subnav = null;
-    if (this.props.yOffset) {
+    if (Object.prototype.hasOwnProperty.call(this.props, 'yOffset')) {
       style = {
         transform: `translateY(${this.props.yOffset}px)`,
         transition: 'transform 100ms cubic-bezier(0.7, 0, 0.3, 1) 0s',

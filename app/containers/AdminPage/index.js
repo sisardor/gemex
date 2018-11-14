@@ -20,6 +20,7 @@ import BalancePane from 'components/BalancePane/Loadable';
 import makeSelectAdminPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import './style.scss';
 
 /* eslint-disable react/prefer-stateless-function */
 export class AdminPage extends React.Component {
