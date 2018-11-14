@@ -40,6 +40,7 @@ import './global-styles';
 const initialState = {};
 const history = createHistory();
 const store = configureStore(initialState, history);
+window.store = store;
 const MOUNT_NODE = document.getElementById('app');
 
 const render = messages => {
