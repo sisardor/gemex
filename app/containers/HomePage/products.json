@@ -1,25 +1,26 @@
 [
   {
     "id": 1,
-    "name": "ring",
+    "name": "Thin Stacking Ring, custom made posey ring with your inscription",
     "price": 44.5,
     "thumb": "http://localhost:7777/ring.jpg"
   },
   {
     "id": 2,
-    "name": "ring",
+    "name": "Hammered Copper Ring Hammered Ring ",
     "price": 44.5,
     "thumb": "http://localhost:7777/ring2.jpg"
   },
   {
     "id": 3,
-    "name": "ring",
+    "name": "Sun ring solid gold ring sterling silver ring ",
     "price": 44.5,
     "thumb": "http://localhost:7777/ring3.jpg"
   },
   {
     "id": 4,
-    "name": "ring",
+    "name":
+      "Diamond Ring, Thin Diamond Ring, Thin Ring, Gold Beaded Ring, Diamond Stacking",
     "price": 44.5,
     "thumb": "http://localhost:7777/ring4.jpg"
   }

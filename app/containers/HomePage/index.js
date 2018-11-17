@@ -21,25 +21,29 @@ export default class HomePage extends React.PureComponent {
   onRemove = () => {};
   render() {
     // const list = [];
-    const list = products.map((product, index) => (
-      <div>
-        <img src={product.thumb} />
-      </div>
-    ));
-    // for (let i = 0; i < 10; i += 1) {
-    //   list.push(
-    //     <Card key={i} interactive elevation={Elevation.TWO}>
-    //       Hello
-    //     </Card>,
-    //   );
-    // }
+    const list = products.map((product, index) => {
+      return (
+        <div key={index}>
+          <div>
+            <img src={product.thumb} />
+          </div>
+          <div>
+            <p>{product.name}</p>
+            <p>
+              <span>$</span>
+              <span>{product.price}</span>
+            </p>
+          </div>
+        </div>
+      );
+    })
     return (
       <div className="container">
         <main className="content">
           <div>
             <Tag onRemove={true && this.onRemove}>Text</Tag>
           </div>
-          <div className="grid-container">{list}</div>
+          <div className="grid-container" style={{maxWidth: 1400}}>{list}</div>
         </main>
       </div>
     );
