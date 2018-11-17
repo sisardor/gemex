@@ -6,7 +6,7 @@ const CardHolder = styled.div`
 `;
 
 const PlaceHolder = styled.div`
-  background-color: #FAF9F5;
+  background-color: #faf9f5;
   position: relative;
   transition: opacity 0.25s ease-out;
 `;
@@ -20,10 +20,5 @@ const P = styled.p`
 const Img = styled.img`
   width: 100%;
 `;
-export {
-  CardHolder,
-  PlaceHolder,
-  P,
-  Img,
-}
+export { CardHolder, PlaceHolder, P, Img };
 export default CardHolder;

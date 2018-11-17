@@ -14,18 +14,18 @@ import React from 'react';
 // import messages from './messages';
 // import LoginForm from 'components/LoginForm/Loadable';
 import { Card, Tag, Elevation } from '@blueprintjs/core';
-import products from './products.json'
+import products from './products.json';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   onRemove = () => {};
   render() {
     // const list = [];
-    const list = products.map((product, index) => {
-      return (
-        <div key={index}><img src={product.thumb} /></div>
-      );
-    })
+    const list = products.map((product, index) => (
+      <div key={index}>
+        <img src={product.thumb} />
+      </div>
+    ));
 
     return (
       <div className="container">

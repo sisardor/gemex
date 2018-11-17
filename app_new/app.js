@@ -37,14 +37,19 @@ import { translationMessages } from './i18n';
 const openSansObserver = new FontFaceObserver('Open Sans', {});
 
 // When Open Sans is loaded, add a font-family using Open Sans to the body
-openSansObserver.load().then(() => {
-  document.body.classList.add('fontLoaded');
-}).catch(err => { console.error(err)})
+openSansObserver
+  .load()
+  .then(() => {
+    document.body.classList.add('fontLoaded');
+  })
+  .catch(err => {
+    console.error(err);
+  });
 
 // Create redux store with history
 const initialState = {};
 const store = configureStore(initialState, history);
-window.store = store
+window.store = store;
 const MOUNT_NODE = document.getElementById('app');
 
 const render = messages => {

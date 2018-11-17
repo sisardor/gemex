@@ -77,11 +77,7 @@ export class SideNavItem extends React.Component {
             />
           </Interactive>
         </A>
-        <SubSideNav>
-          
-            {subnav}
-          
-        </SubSideNav>
+        <SubSideNav>{subnav}</SubSideNav>
       </li>
     );
   }
